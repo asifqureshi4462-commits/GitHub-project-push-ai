@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Accents: Purple and Blue -->
+    <color name="brand_primary">#6C5CE7</color>
+    <color name="brand_primary_variant">#5640C4</color>
+    <color name="brand_secondary">#0984E3</color>
+    <color name="brand_cyan">#00CEC9</color>
+    <color name="brand_accent">#A29BFE</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="bg_dark">#0A1128</color>
+    <color name="surface_dark">#152042</color>
+    <color name="surface_variant_dark">#1E2C58</color>
+    <color name="card_stroke_dark">#2B3D72</color>
+    <color name="text_primary_dark">#F8FAFC</color>
+    <color name="text_secondary_dark">#94A3B8</color>
+    <color name="text_tertiary_dark">#64748B</color>
+
+    <!-- Light Theme Colors -->
+    <color name="bg_light">#F8FAFC</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant_light">#F1F5F9</color>
+    <color name="card_stroke_light">#E2E8F0</color>
+    <color name="text_primary_light">#0F172A</color>
+    <color name="text_secondary_light">#475569</color>
+    <color name="text_tertiary_light">#94A3B8</color>
+
+    <!-- Semantic Status Colors -->
+    <color name="status_success">#10B981</color>
+    <color name="status_warning">#F59E0B</color>
+    <color name="status_error">#EF4444</color>
+    <color name="status_info">#3B82F6</color>
+
+    <!-- Shared Commons -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="overlay_scrim">#80000000</color>
+</resources>

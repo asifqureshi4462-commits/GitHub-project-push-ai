@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/surface_dark"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_code"
+            app:tint="@color/brand_cyan"
+            android:contentDescription="Code"/>
+
+        <TextView
+            android:id="@+id/tvDialogFileTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="src/App.java"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:ellipsize="middle"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/btnDialogClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textColor="@color/brand_accent"
+            android:textStyle="bold"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_glass_card"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvDialogFileContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:text="File content preview..."
+            android:textIsSelectable="true"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/tvDialogFileSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Size: 2.4 KB"
+            android:textColor="@color/text_tertiary_dark"
+            android:textSize="12sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDialogCopyContent"
+            style="@style/Widget.GitForge.Button.Outlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy Content"
+            app:icon="@drawable/ic_copy"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>

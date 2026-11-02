@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="14dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/card_stroke_dark"
+    app:cardBackgroundColor="@color/surface_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvHistoryStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUCCESS"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/status_success"
+                android:background="@drawable/bg_glass_card"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"/>
+
+            <TextView
+                android:id="@+id/tvHistoryTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="Today, 14:32"
+                android:textColor="@color/text_tertiary_dark"
+                android:textSize="12sp"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvHistoryRepo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user/project-repo"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_branch"
+                app:tint="@color/brand_accent"
+                android:contentDescription="Branch"/>
+
+            <TextView
+                android:id="@+id/tvHistoryBranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="main"
+                android:textColor="@color/brand_accent"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvHistoryFileCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="• 24 files"
+                android:textColor="@color/text_tertiary_dark"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvHistoryCommitMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Initial commit of project files via GitForge"
+            android:textColor="@color/text_secondary_dark"
+            android:textSize="13sp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tvHistorySha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="SHA: 4a2bc91e..."
+            android:textColor="@color/brand_cyan"
+            android:textSize="11sp"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

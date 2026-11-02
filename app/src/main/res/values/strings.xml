@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GitForge Pusher</string>
+    <string name="app_tagline">Push Projects, ZIPs &amp; Files to GitHub Effortlessly</string>
+
+    <!-- Navigation Titles -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_repos">Repositories</string>
+    <string name="nav_pusher">Push Project</string>
+    <string name="nav_history">History</string>
+    <string name="nav_ai_tools">AI Tools</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_title_1">Push Direct to GitHub</string>
+    <string name="onboarding_desc_1">Upload folders, single files, or complete project ZIP archives straight to any GitHub branch without terminal commands.</string>
+    <string name="onboarding_title_2">Git Trees &amp; Blobs Engine</string>
+    <string name="onboarding_desc_2">Uses the official GitHub Git Database API to create pristine multi-file commits safely with commit SHA validation.</string>
+    <string name="onboarding_title_3">AI-Powered Developer Tools</string>
+    <string name="onboarding_desc_3">Generate READMEs, review code for bugs and security vulnerabilities, and decode Git error messages instantly.</string>
+
+    <!-- Auth -->
+    <string name="login_title">Connect GitHub Account</string>
+    <string name="login_subtitle">Authenticate with a Personal Access Token (PAT) or Device Flow</string>
+    <string name="login_pat_tab">Personal Access Token</string>
+    <string name="login_device_tab">Device OAuth Flow</string>
+    <string name="login_pat_hint">ghp_xxxxxxxxxxxxxxxxxxxx or github_pat_xxxx</string>
+    <string name="login_pat_helper">Requires \'repo\' scope to read repositories and push commits.</string>
+    <string name="login_btn_connect">Connect &amp; Verify Token</string>
+    <string name="login_device_instructions">Open github.com/login/device in your browser and enter the code below:</string>
+    <string name="login_device_code_prompt">Waiting for authorization...</string>
+    <string name="login_device_btn_start">Start Device Authorization</string>
+    <string name="login_btn_logout">Sign Out</string>
+    <string name="login_token_invalid">Invalid token or missing permissions. Please verify scopes.</string>
+    <string name="login_token_saved">GitHub account connected successfully!</string>
+
+    <!-- Dashboard -->
+    <string name="dash_welcome">Welcome,</string>
+    <string name="dash_stat_repos">Repositories</string>
+    <string name="dash_stat_uploads">Total Pushes</string>
+    <string name="dash_stat_success">Success Rate</string>
+    <string name="dash_quick_push">Quick Push</string>
+    <string name="dash_select_project">Select Project or ZIP</string>
+    <string name="dash_recent_uploads">Recent Upload Activity</string>
+    <string name="dash_explore_ai">Explore AI Tools</string>
+
+    <!-- Project Pusher Steps -->
+    <string name="pusher_step_1">1. Files</string>
+    <string name="pusher_step_2">2. Destination</string>
+    <string name="pusher_step_3">3. Review &amp; Commit</string>
+    <string name="pusher_step_4">4. Push Status</string>
+
+    <!-- File Picker -->
+    <string name="picker_select_zip">Choose Project ZIP Archive</string>
+    <string name="picker_select_folder">Choose Folder (SAF)</string>
+    <string name="picker_select_files">Choose Individual Files</string>
+    <string name="picker_supported_formats">ZIP archives (.zip), source files, assets</string>
+    <string name="picker_no_files_selected">No files selected yet.</string>
+    <string name="picker_total_files">Total files: %1$d</string>
+    <string name="picker_total_size">Size: %1$s</string>
+    <string name="picker_filter_ignored">Auto-ignoring .git, node_modules, build caches</string>
+
+    <!-- Repository & Branch Selection -->
+    <string name="repo_select_title">Choose Destination Repository</string>
+    <string name="repo_search_hint">Search your repositories...</string>
+    <string name="repo_branch_title">Select Branch</string>
+    <string name="repo_create_new_branch">+ Create new branch</string>
+    <string name="repo_branch_hint">Branch name (e.g., main, release, feature-1)</string>
+
+    <!-- Commit Details -->
+    <string name="commit_details_title">Commit Information</string>
+    <string name="commit_msg_label">Commit Message</string>
+    <string name="commit_msg_hint">e.g., Upload project files via GitForge</string>
+    <string name="commit_author_label">Commit Author</string>
+    <string name="commit_overwrite_warning">Files with matching paths in the target tree will be updated to these new versions.</string>
+    <string name="commit_btn_push">Push to GitHub</string>
+
+    <!-- Progress & Result -->
+    <string name="upload_preparing">Preparing project files...</string>
+    <string name="upload_blobs">Creating Git blobs (%1$d/%2$d)...</string>
+    <string name="upload_tree">Constructing Git tree...</string>
+    <string name="upload_commit">Creating commit object...</string>
+    <string name="upload_ref">Updating branch reference...</string>
+    <string name="upload_success_title">Successfully Pushed!</string>
+    <string name="upload_success_desc">Your files have been committed and pushed to GitHub.</string>
+    <string name="upload_commit_sha">Commit SHA: %1$s</string>
+    <string name="upload_view_on_github">View on GitHub</string>
+    <string name="upload_push_another">Push Another Project</string>
+    <string name="upload_failed_title">Push Failed</string>
+
+    <!-- AI Tools -->
+    <string name="ai_tools_title">AI Developer Tools</string>
+    <string name="ai_readme_title">AI README Generator</string>
+    <string name="ai_readme_desc">Analyze project files or project description to generate a comprehensive, professional Markdown README.</string>
+    <string name="ai_review_title">AI Code Reviewer</string>
+    <string name="ai_review_desc">Inspect code files or snippets for security risks, edge cases, bugs, and performance improvements.</string>
+    <string name="ai_error_title">AI Error Explainer</string>
+    <string name="ai_error_desc">Paste cryptic Git, build, or compile errors to receive plain-English root causes and terminal fixes.</string>
+    <string name="ai_prompt_hint">Enter project description, code snippet, or error log...</string>
+    <string name="ai_btn_generate">Run AI Analysis</string>
+    <string name="ai_btn_copy">Copy Output</string>
+    <string name="ai_btn_use_in_upload">Save as README.md in Upload</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings &amp; Configuration</string>
+    <string name="settings_account_section">GitHub Account</string>
+    <string name="settings_theme_section">Appearance</string>
+    <string name="settings_ai_section">AI Provider Configuration</string>
+    <string name="settings_security_section">Security &amp; Encryption</string>
+    <string name="settings_theme_system">System Default</string>
+    <string name="settings_theme_dark">Dark Mode</string>
+    <string name="settings_theme_light">Light Mode</string>
+    <string name="settings_ai_provider">Provider: Google Gemini / Custom Proxy</string>
+    <string name="settings_ai_model">Model: gemini-1.5-flash / gemini-2.0-flash</string>
+    <string name="settings_ai_key_label">AI API Key</string>
+    <string name="settings_ai_key_hint">Enter Gemini API key (or leave empty to use server)</string>
+    <string name="settings_ai_key_warning">Warning: Storing API keys locally on client devices has inherent security limitations. For production deployments, GitForge Pusher recommends routing requests through a secure backend proxy.</string>
+    <string name="settings_security_desc">All tokens and keys are encrypted via Android Keystore AES-256 GCM. Cleartext HTTP is disabled.</string>
+    <string name="settings_about_desc">GitForge Pusher v1.0.0\nBuilt for mobile-first GitHub automation.</string>
+</resources>
